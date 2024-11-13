@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndreBaliSpa</title>
+    <link rel="stylesheet" href="/gaya.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h2>Andre Bali Spa</h2>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="submenu">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#package">Packages</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservasi">Reservation</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="subheader">
+            <div class="subheader-content">
+                <h1>Welcome to Andre Bali SPA</h1>
+                <p>Enjoy our massages and make new experiences.</p>
+                <a href="https://www.andrebalispa.com/" class="explore-btn">Explore Services</a>
+            </div>
+        </div>
+
+        <main>
+            <article id="about">
+                <h2><B>About Us</B></h2>
+                <p>
+                    Your journey to Candidasa, Bali won't be complete without a visit to <b>ANDRE SPA MANGGIS</b> or <b>ANDRE SPA CANDIDASA</b>, specially designed spa rooms with either air-conditioning or ceiling fans. I and my wife, Supik, opened our first beauty salons in November 2003 in Candidasa, bringing body care and beauty treatments to Villas or hotels in the area. Combining organic spa products and genuine Balinese treatments, we use only the purest and highest quality essentials oils, expertly blended with natural plant oils. 
+                    We offer spa, beauty products and excellent service from the ANDRE SPA range. Please come and try out our skills and pamper yourself during your holiday with ANDRE SPA MANGGIS in a modern Balinese building style located at Jl. Raya Buitan 3 km from the centre of Candidasa, next to a forest and a nice garden to refresh your mind, body and soul or ANDRE SPA CANDIDASA located in the central of Candidasa town, side to side with restaurant and shopping center surrounding.
+                    <q>May the treatments be most memorable and enjoyable on your holiday</q>.
+                    <br /> <br />
+                    Kind regards, <br /> <b>Andre</b>
+                </p>
+            </article>
+            
+            <div class="package-container">
+                <div class="CaraReservasi" id="how">
+                    <h3>How to make a reservation?</h3>
+                    <ol>
+                        <li>Fill form for personal data below</li>
+                        <li>Click submit</li>
+                        <li>Send <i>screenshot</i> for the proof of submission on email</li>
+                    </ol>
+                </div>
+                <br />
+                    
+                <div class="package" id="package">
+                    <h3>Packages</h3>
+                    <p>You can take this package and get a special price:</p>
+                    <ul>
+                        <li>Relaxing Day & SPA</li>
+                        <li>Rivers Adventures SPA</li>
+                        <li>Bali's Eastern</li>
+                        <li>Hill & Ocean</li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+
+            <table id="menu" border="1">
+                <tr>
+                    <th colspan="3"><i>Body Massages</i></th>
+                </tr>
+                <tr>
+                    <th>No</th>
+                    <th>Menu</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Back Shoulder Head & Hand</td>
+                    <td>175k</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aromatherapy</td>
+                    <td>175k</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Balinese DNA</td>
+                    <td>175k</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Foot and Leg</td>
+                    <td>175k</td>
+                </tr>
+            </table>
+            <br />
+
+            <table border="1">
+                <tr>
+                    <th colspan="3"><i>Salons</i></th>
+                </tr>
+                <tr>
+                    <th>No</th>
+                    <th>Menu</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Origanic Facial</td>
+                    <td>175K</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Manicure</td>
+                    <td>160k/hour</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pedicure</td>
+                    <td>160k/hour</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Seaweed Body Mask</td>
+                    <td>180k</td>
+                </tr>
+            </table>
+        
+            <br />
+            <div id="reservasi" class="Reservasi">
+                <h2>Reservation Form</h2>
+
+                <form id="reservasi">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" autocomplete="off">
+                    <span id="nameError" class="error"></span>
+                    <br /> <br />
+        
+                    <label for="phoneNumber">Number Phone:</label>
+                    <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Your number">
+                    <span id="phoneError" class="error"></span>
+                    <br /> <br />
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" autocomplete="off">
+                    <span id="emailError" class="error"></span>
+                    <br /> <br />
+        
+                    <label for="gender">Gender:</label>
+                    <br />
+
+                    <input type="radio" id="Male" name="gender" value="male"> Male
+                    <br />
+
+                    <input type="radio" id="Female" name="gender" value="female"> Female
+                    <br />
+
+                    <span id="genderError" class="error"></span>
+                    <br /> <br /> 
+        
+                    <label for="menu">Choose Menu:</label>
+                    <br />
+
+                    <input type="checkbox" id="spa" name="menu" value="spa"> SPA
+                    <br />
+
+                    <input type="checkbox" id="salon" name="menu" value="salon"> Salon
+                    <br /> <br />
+
+                    <label for="details">Specific Menu Name:</label>
+                    <br />
+                    <textarea id="details" name="details" placeholder="Write your chosen menu.." rows="4"></textarea>
+                    <br /> <br />
+
+                    <span id="purposesError" class="error"></span>
+                    
+                    <input type="submit" value="Submit">
+                    <br /> <br />
+                </form>
+            </div>
+            <br />
+        
+            <aside>
+                <h4>Relaxing Song</h4>
+                <p>Morning Happiness - Gus Teja</p> <br />
+                <audio controls/autoplay/loop>
+                    <source src="Bali World Music, Gus Teja, Morning Happiness.mp3" type="audio/mpeg">
+                    Your browser doesn't support video.
+                </audio>
+            </aside>
+        
+            <footer id="contact" >
+                <h3>Contact Us</h3>
+                <p>do you have questions? please contact us.</p>
+                <div class="contact-links">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=putumertabhuana@gmail.com" target="_blank">
+                        <img src="email.png" width="60px" height="60px" alt="Email Icon"
+                    </a> 
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="scriptnya.js"></script>
+</body>
+</html>

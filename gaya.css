@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    background-color: rgba(20, 20, 20, 0.95);
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    color: #1adeb0;
+    font-weight: 700;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+    color: #1adeb0;
+    text-decoration: underline;
+}
+
+.submenu {
+    background-color: #1a1a1a;
+    padding: 0.5rem 0;
+}
+
+.submenu ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.submenu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.submenu a:hover {
+    color: #1adeb0;
+    text-decoration: underline;
+}
+
+.subheader {
+    background-image: url('bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.subheader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:  rgba(37, 45, 41, 0.5); 
+    z-index: -1;
+}
+
+.subheader-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.subheader-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #15bc95;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #119b7b;
+}
+
+.CaraReservasi, .package {
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    grid-column: span 1;
+    margin: 10px;
+}
+
+.package-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.CaraReservasi,
+.package {
+    flex: 1;
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .package-container {
+        flex-direction: column;
+    }
+}
+
+.video {
+    grid-area: video;
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    grid-column: span 2;
+    margin: 20px;
+}
+
+#about {
+    padding: 4rem 0;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#about p{
+    text-align:justify;
+}
+
+#how li, ul {
+    list-style-position: inside;
+}
+
+.package {
+    grid-area: lomba;
+    padding: 20px;
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 15px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #1adeb0;
+    margin: 2rem 0;
+}
+  
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: rgba(49, 66, 57, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(27, 106, 64, 0.1);
+}
+  
+th {
+    padding: 20px;
+    background-color: rgba(59, 184, 120, 0.2);
+    color: #1adeb0;
+}
+  
+.Reservasi {
+    background-color: rgba(20, 20, 20, 0.5);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+  
+.Reservasi h2 {
+    color: #1adeb0;
+    margin-bottom: 2rem;
+}
+  
+.Reservasi div {
+    margin-bottom: 1.5rem;
+}
+
+.CaraReservasi {
+    padding: 20px;
+    padding-left: 20px;
+}
+  
+#contact {
+    padding: 3rem 0;
+}
+  
+#contact a {
+    color: #1adeb0;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+  
+#contact a:hover {
+    color: #ffffff;
+}
+  
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: rgba(255, 255, 255, 0.679);
+}
+  
+@media (max-width: 768px) {
+    .fotoAna-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .text-Anacontent h1 {
+      font-size: 3rem;
+    }
+  
+    .secheader ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .grid-section {
+        grid-template-columns: 1fr; 
+    }
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid rgba(75, 255, 162, 0.2);
+    border-radius: 5px;
+    background-color: rgba(20, 20, 20, 0.5);
+    color: #ffffff;
+}
+
+.Reservasi input[type="submit"] {
+    background-color: #12aa86;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.Reservasi input[type="submit"]:hover {
+    background-color: #0c644f;
+    color: #ffffff; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); 
+}
+  
+  input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+  
+.fotoAna-container,
+.buktiViewers,
+.lomba,
+.video, .header,
+.Reservasi {
+    animation: fadeIn 1s ease-out;
+}
+  
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #1adeb0;
+}
+  
+strong, b {
+    color: #1adeb0;
+}
+  
+code {
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+}
+
+aside {
+    margin: 10px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem; 
+    margin-top: 0.1rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 17px; 
+}
+
+.contact-links a img {
+    display:block;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid rgba(75, 255, 162, 0.2);
+    border-radius: 5px;
+    background-color: rgba(20, 20, 20, 0.5);
+    color: #ffffff;
+    resize: vertical; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
